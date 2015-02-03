@@ -1,0 +1,6 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"buggy-desc": "This extension is intentionally buggy. It is used to test error handling."
+}

@@ -1,0 +1,71 @@
+{
+	"name": "Buggy",
+	"version": "0.1.0",
+	"author": [
+		"Gergő Tisza"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Buggy",
+	"descriptionmsg": "buggy-desc",
+	"type": "other",
+	"Hooks": {
+		"BeforePageDisplay": [
+			"BuggyHooks::onBeforePageDisplay"
+		]
+	},
+	"MessagesDirs": {
+		"BoilerPlate": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.Buggy.css": {
+			"localBasePath": "",
+			"remoteExtPath": "Buggy",
+			"styles": "modules/ext.Buggy.css"
+		},
+		"ext.Buggy.startup": {
+			"localBasePath": "",
+			"remoteExtPath": "Buggy",
+			"scripts": "modules/ext.Buggy.startup.js"
+		},
+		"ext.Buggy.setTimeout": {
+			"localBasePath": "",
+			"remoteExtPath": "Buggy",
+			"scripts": "modules/ext.Buggy.setTimeout.js"
+		},
+		"ext.Buggy.onready": {
+			"localBasePath": "",
+			"remoteExtPath": "Buggy",
+			"scripts": "modules/ext.Buggy.onready.js"
+		},
+		"ext.Buggy.click": {
+			"localBasePath": "",
+			"remoteExtPath": "Buggy",
+			"scripts": "modules/ext.Buggy.click.js"
+		},
+		"ext.Buggy.ajax": {
+			"localBasePath": "",
+			"remoteExtPath": "Buggy",
+			"scripts": "modules/ext.Buggy.ajax.js"
+		},
+		"ext.Buggy.misc-cb": {
+			"localBasePath": "",
+			"remoteExtPath": "Buggy",
+			"scripts": "modules/ext.Buggy.misc-cb.js"
+		},
+		"ext.Buggy.mwload": {
+			"localBasePath": "",
+			"remoteExtPath": "Buggy",
+			"scripts": "modules/ext.Buggy.mwload.js"
+		}
+	},
+	"AutoloadClasses": {
+		"BuggyHooks": "Buggy.hooks.php"
+	},
+	"config": {
+		"BuggyPaths": {
+			"localBasePath": "/vagrant/mediawiki/extensions/Buggy",
+			"remoteExtPath": "Buggy"
+		}
+	}
+}
