@@ -57,6 +57,11 @@
 			"localBasePath": "",
 			"remoteExtPath": "Buggy",
 			"scripts": "modules/ext.Buggy.mwload.js"
+		},
+		"ext.Buggy.logError": {
+			"localBasePath": "",
+			"remoteExtPath": "Buggy",
+			"scripts": "modules/ext.Buggy.logError.js"
 		}
 	},
 	"AutoloadClasses": {

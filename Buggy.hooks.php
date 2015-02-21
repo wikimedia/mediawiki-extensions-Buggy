@@ -14,29 +14,23 @@ class BuggyHooks {
 			if ( !is_array( $buggy ) ) {
 				$buggy = array( $buggy );
 			}
-			if ( in_array( 'css', $buggy ) ) {
-				$out->addModules( array( 'ext.Buggy.css' ) );
-			}
-			if ( in_array( 'startup', $buggy ) ) {
-				$out->addModules( array( 'ext.Buggy.startup' ) );
-			}
-			if ( in_array( 'setTimeout', $buggy ) ) {
-				$out->addModules( array( 'ext.Buggy.setTimeout' ) );
-			}
-			if ( in_array( 'onready', $buggy ) ) {
-				$out->addModules( array( 'ext.Buggy.onready' ) );
-			}
-			if ( in_array( 'click', $buggy ) ) {
-				$out->addModules( array( 'ext.Buggy.click' ) );
-			}
-			if ( in_array( 'ajax', $buggy ) ) {
-				$out->addModules( array( 'ext.Buggy.ajax' ) );
-			}
-			if ( in_array( 'misc-cb', $buggy ) ) {
-				$out->addModules( array( 'ext.Buggy.misc-cb' ) );
-			}
-			if ( in_array( 'mwload', $buggy ) ) {
-				$out->addModules( array( 'ext.Buggy.mwload' ) );
+
+			$modules = array(
+				'css' => 'ext.Buggy.css',
+				'startup' => 'ext.Buggy.startup',
+				'setTimeout' => 'ext.Buggy.setTimeout',
+				'onready' => 'ext.Buggy.onready',
+				'click' => 'ext.Buggy.click',
+				'ajax' => 'ext.Buggy.ajax',
+				'misc-cb' => 'ext.Buggy.misc-cb',
+				'mwload' => 'ext.Buggy.mwload',
+				'logError' => 'ext.Buggy.logError',
+			);
+
+			foreach ( $modules as $keyword => $module ) {
+				if ( in_array( $keyword, $buggy ) ) {
+					$out->addModules( array( $module ) );
+				}
 			}
 		}
 		return true;

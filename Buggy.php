@@ -64,3 +64,4 @@ $wgResourceModules['ext.Buggy.click'] = $wgBuggyPaths + array( 'scripts' => 'mod
 $wgResourceModules['ext.Buggy.ajax'] = $wgBuggyPaths + array( 'scripts' => 'modules/ext.Buggy.ajax.js' );
 $wgResourceModules['ext.Buggy.misc-cb'] = $wgBuggyPaths + array( 'scripts' => 'modules/ext.Buggy.misc-cb.js' );
 $wgResourceModules['ext.Buggy.mwload'] = $wgBuggyPaths + array( 'scripts' => 'modules/ext.Buggy.mwload.js' );
+$wgResourceModules['ext.Buggy.logError'] = $wgBuggyPaths + array( 'scripts' => 'modules/ext.Buggy.logError.js' );
