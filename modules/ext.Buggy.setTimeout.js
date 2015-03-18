@@ -1,3 +1,4 @@
+/*jshint undef:false  */
 ( function () {
-	setTimeout( function() { callANonExistentFunctionInSetTimeout() }, 0 );
+	setTimeout( function() { callANonExistentFunctionInSetTimeout(); }, 0 );
 }() );

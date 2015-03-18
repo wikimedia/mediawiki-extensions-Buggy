@@ -1,3 +1,4 @@
+/*jshint undef:false */
 ( function () {
 	var i, xhr, ids = [
 		'MSXML2.XMLHTTP.3.0',
@@ -22,5 +23,5 @@
 		}
 	};
 	xhr.open( 'GET', '/wiki/Main_Page', true );
-	xhr.send( '' )
+	xhr.send( '' );
 }() );
