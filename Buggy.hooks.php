@@ -15,6 +15,13 @@ class BuggyHooks {
 				$buggy = array( $buggy );
 			}
 
+			if ( in_array( 'php-exception', $buggy ) ) {
+				throw new Exception( 'Buggy test exception', 123 );
+			}
+			if ( in_array( 'php-mwexception', $buggy ) ) {
+				throw new MWException( 'Buggy test exception', 123 );
+			}
+
 			$modules = array(
 				'css' => 'ext.Buggy.css',
 				'startup' => 'ext.Buggy.startup',
