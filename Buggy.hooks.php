@@ -15,13 +15,19 @@ class BuggyHooks {
 				$buggy = array( $buggy );
 			}
 
-			if ( in_array( 'php-exception', $buggy ) ) {
-				throw new Exception( 'Buggy test exception', 123 );
-			}
-			if ( in_array( 'php-mwexception', $buggy ) ) {
-				throw new MWException( 'Buggy test exception', 123 );
+			// PHP errors
+			foreach ( $buggy as $error ) {
+				switch ( $error ) {
+					case 'php-exception':
+						throw new Exception( 'Buggy test exception', 123 );
+					case 'php-mwexception':
+						throw new MWException( 'Buggy test exception', 123 );
+					case 'missing-class':
+						new Buggy_NoSuchClass();
+				}
 			}
 
+			// JS/asset errors
 			$modules = array(
 				'css' => 'ext.Buggy.css',
 				'startup' => 'ext.Buggy.startup',
@@ -33,7 +39,6 @@ class BuggyHooks {
 				'mwload' => 'ext.Buggy.mwload',
 				'logError' => 'ext.Buggy.logError',
 			);
-
 			foreach ( $modules as $keyword => $module ) {
 				if ( in_array( $keyword, $buggy ) ) {
 					$out->addModules( array( $module ) );
