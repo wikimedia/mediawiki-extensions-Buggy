@@ -12,6 +12,9 @@
 			"BuggyHooks::onBeforePageDisplay"
 		]
 	},
+	"APIModules": {
+		"buggy": "ApiBuggy"
+	},
 	"MessagesDirs": {
 		"BoilerPlate": [
 			"i18n"
@@ -65,7 +68,8 @@
 		}
 	},
 	"AutoloadClasses": {
-		"BuggyHooks": "Buggy.hooks.php"
+		"BuggyHooks": "Buggy.hooks.php",
+		"ApiBuggy": "ApiBuggy.php"
 	},
 	"config": {
 		"BuggyPaths": {

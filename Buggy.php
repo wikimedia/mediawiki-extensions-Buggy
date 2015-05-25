@@ -46,10 +46,13 @@ $wgExtensionCredits['other'][] = array(
 
 // Register files
 $wgAutoloadClasses['BuggyHooks'] = __DIR__ . '/Buggy.hooks.php';
+$wgAutoloadClasses['ApiBuggy'] = __DIR__ . '/ApiBuggy.php';
 $wgMessagesDirs['BoilerPlate'] = __DIR__ . '/i18n';
 
 // Register hooks
 $wgHooks['BeforePageDisplay'][] = 'BuggyHooks::onBeforePageDisplay';
+
+$wgAPIModules['buggy'] = 'ApiBuggy';
 
 // Register modules
 $wgBuggyPaths = array(

@@ -2,5 +2,6 @@
         "@metadata": {
                 "authors": []
         },
-	"buggy-desc": "{{desc|name=Buggy|url=http://www.mediawiki.org/wiki/Extension:Buggy}}"
+	"buggy-desc": "{{desc|name=Buggy|url=http://www.mediawiki.org/wiki/Extension:Buggy}}",
+	"apihelp-buggy-description": "{{doc-apihelp-description||buggy|buggy}}"
 }

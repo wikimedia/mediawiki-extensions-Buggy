@@ -2,5 +2,6 @@
 	"@metadata": {
 		"authors": []
 	},
-	"buggy-desc": "This extension is intentionally buggy. It is used to test error handling."
+	"buggy-desc": "This extension is intentionally buggy. It is used to test error handling.",
+	"apihelp-buggy-description": "Calling this API action will result in an exception."
 }
