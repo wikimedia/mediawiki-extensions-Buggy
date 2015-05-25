@@ -24,6 +24,9 @@ class BuggyHooks {
 						throw new MWException( 'Buggy test exception', 123 );
 					case 'missing-class':
 						new Buggy_NoSuchClass();
+					case 'sql':
+						$dbr = wfGetDB( DB_SLAVE );
+						$dbr->query( 'THIS IS AN ERROR', __METHOD__ );
 				}
 			}
 
