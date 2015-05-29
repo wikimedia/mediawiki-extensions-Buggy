@@ -76,5 +76,6 @@
 			"localBasePath": "/vagrant/mediawiki/extensions/Buggy",
 			"remoteExtPath": "Buggy"
 		}
-	}
+	},
+	"manifest_version": 1
 }
