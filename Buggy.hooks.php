@@ -7,7 +7,14 @@
  */
 
 class BuggyHooks {
-	public static function onBeforePageDisplay( OutputPage  &$out, Skin &$skin ) {
+	public static function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
+		static $fired = false;
+		if ( $fired ) {
+			// Only fire once per request
+			return true;
+		}
+		$fired = true;
+
 		$queryValues = $out->getRequest()->getQueryValues();
 		if ( isset( $queryValues['buggy'] ) ) {
 			$buggy = $queryValues['buggy'];
