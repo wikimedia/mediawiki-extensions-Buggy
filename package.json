@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "test": "jshint ."
+    "test": "grunt test"
   },
   "devDependencies": {
-    "jshint": "2.8.0"
+    "grunt": "1.0.1",
+    "grunt-contrib-jshint": "1.0.0"
   }
 }
