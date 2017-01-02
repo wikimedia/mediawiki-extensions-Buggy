@@ -17,7 +17,7 @@
 		"buggy": "ApiBuggy"
 	},
 	"MessagesDirs": {
-		"BoilerPlate": [
+		"Buggy": [
 			"i18n"
 		]
 	},
