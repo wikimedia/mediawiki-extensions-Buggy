@@ -31,6 +31,15 @@ class BuggyHooks {
 						throw new MWException( 'Buggy test exception', 123 );
 					case 'missing-class':
 						new Buggy_NoSuchClass();
+					case 'php-error':
+						require( 'nosuchfile.php' );
+						break;
+					case 'php-warning':
+						foreach ( null as $_ );
+						break;
+					case 'php-notice':
+						$_ = $doesNotExist;
+						break;
 					case 'sql':
 						$dbr = wfGetDB( DB_SLAVE );
 						$dbr->query( 'THIS IS AN ERROR', __METHOD__ );
