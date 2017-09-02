@@ -41,7 +41,7 @@ class BuggyHooks {
 						$_ = $doesNotExist;
 						break;
 					case 'sql':
-						$dbr = wfGetDB( DB_SLAVE );
+						$dbr = wfGetDB( DB_REPLICA );
 						$dbr->query( 'THIS IS AN ERROR', __METHOD__ );
 				}
 			}
