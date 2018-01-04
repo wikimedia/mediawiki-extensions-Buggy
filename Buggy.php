@@ -40,7 +40,7 @@ $wgExtensionCredits['other'][] = array(
 	'version'  => '0.1.0',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Buggy',
 	'descriptionmsg' => 'buggy-desc',
-	'license-name' => 'GPL-2.0+',
+	'license-name' => 'GPL-2.0-or-later',
 );
 
 /* Setup */

@@ -6,7 +6,7 @@
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:Buggy",
 	"descriptionmsg": "buggy-desc",
-	"license-name": "GPL-2.0+",
+	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"Hooks": {
 		"BeforePageDisplay": [
