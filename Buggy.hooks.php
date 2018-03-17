@@ -31,6 +31,8 @@ class BuggyHooks {
 						throw new MWException( 'Buggy test exception', 123 );
 					case 'missing-class':
 						new Buggy_NoSuchClass();
+					case 'incompatible-class':
+						require( 'incompatible_class.php' );
 					case 'php-error':
 						require( 'nosuchfile.php' );
 						break;
