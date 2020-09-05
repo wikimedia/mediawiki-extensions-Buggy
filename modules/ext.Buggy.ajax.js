@@ -1,4 +1,3 @@
-/*jshint undef:false */
 ( function ( $ ) {
-	$.when( $.get( '/wiki/Main_Page'), $.when( 1 ) ).done( function() { callANonExistentFunctionOnAjaxSuccess(); } );
+	$.when( $.get( '/wiki/Main_Page' ), $.when( 1 ) ).done( function () { callANonExistentFunctionOnAjaxSuccess(); } );
 }( jQuery ) );

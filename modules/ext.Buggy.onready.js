@@ -1,4 +1,3 @@
-/*jshint undef:false  */
 ( function ( $ ) {
-	$( function() { callANonExistentFunctionOnDomReady(); } );
+	$( function () { callANonExistentFunctionOnDomReady(); } );
 }( jQuery ) );

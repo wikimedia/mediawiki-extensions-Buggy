@@ -1,4 +1,3 @@
-/*jshint undef:false  */
 ( function ( mw ) {
 	try {
 		callANonExistentFunctionForManualLogging();

@@ -1,4 +1,3 @@
-/*jshint undef:false */
 ( function ( $ ) {
-	$( '#firstHeading' ).click( function() { callANonExistentFunctionOnClick(); } ).click();
+	$( '#firstHeading' ).on( 'click', function () { callANonExistentFunctionOnClick(); } ).trigger( 'click' );
 }( jQuery ) );

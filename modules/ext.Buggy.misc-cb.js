@@ -1,4 +1,3 @@
-/*jshint undef:false */
 ( function () {
 	var i, xhr, ids = [
 		'MSXML2.XMLHTTP.3.0',
@@ -11,7 +10,7 @@
 	} else {
 		for ( i = 0; i < ids.length; i++ ) {
 			try {
-				xhr = new ActiveXObject( ids[i] );
+				xhr = new ActiveXObject( ids[ i ] );
 				break;
 			} catch ( e ) {}
 		}
