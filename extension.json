@@ -58,7 +58,7 @@
 		"remoteExtPath": "Buggy/modules"
 	},
 	"AutoloadClasses": {
-		"BuggyHooks": "Buggy.hooks.php",
+		"BuggyHooks": "BuggyHooks.php",
 		"ApiBuggy": "ApiBuggy.php"
 	},
 	"manifest_version": 1
