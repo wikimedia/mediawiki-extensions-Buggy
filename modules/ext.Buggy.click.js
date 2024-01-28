@@ -1,3 +1,5 @@
 ( function ( $ ) {
-	$( '#firstHeading' ).on( 'click', function () { callANonExistentFunctionOnClick(); } ).trigger( 'click' );
+	$( '#firstHeading' ).on( 'click', function () {
+		callANonExistentFunctionOnClick();
+	} ).trigger( 'click' );
 }( jQuery ) );

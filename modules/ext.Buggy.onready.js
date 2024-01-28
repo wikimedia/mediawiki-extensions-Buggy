@@ -1,3 +1,5 @@
 ( function ( $ ) {
-	$( function () { callANonExistentFunctionOnDomReady(); } );
+	$( function () {
+		callANonExistentFunctionOnDomReady();
+	} );
 }( jQuery ) );

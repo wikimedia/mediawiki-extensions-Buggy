@@ -6,8 +6,7 @@
 		"wikimedia/mediawiki"
 	],
 	"rules": {
-		"no-undef": "off",
-		"max-statements-per-line": "warn",
-		"no-jquery/no-global-selector": "warn"
+		"no-jquery/no-global-selector": "warn",
+		"no-undef": "off"
 	}
 }
