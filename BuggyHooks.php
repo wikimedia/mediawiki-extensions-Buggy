@@ -1,4 +1,7 @@
 <?php
+
+use MediaWiki\MediaWikiServices;
+
 /**
  * Hooks for Buggy extension
  *
@@ -50,7 +53,7 @@ class BuggyHooks {
 						$_ = $doesNotExist;
 						break;
 					case 'sql':
-						$dbr = wfGetDB( DB_REPLICA );
+						$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
 						// phpcs:ignore MediaWiki.Usage.DbrQueryUsage.DbrQueryFound
 						$dbr->query( 'THIS IS AN ERROR', __METHOD__ );
 				}
