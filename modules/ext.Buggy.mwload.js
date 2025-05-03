@@ -1,5 +1,5 @@
 ( function () {
-	mw.loader.using( 'ext.Buggy.mwload', function () {
+	mw.loader.using( 'ext.Buggy.mwload', () => {
 		callANonExistentFunctionOnMwLoadSuccess();
 	} );
 }() );

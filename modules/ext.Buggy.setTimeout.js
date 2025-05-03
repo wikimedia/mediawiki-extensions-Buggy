@@ -1,5 +1,5 @@
 ( function () {
-	setTimeout( function () {
+	setTimeout( () => {
 		callANonExistentFunctionInSetTimeout();
 	}, 0 );
 }() );

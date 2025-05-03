@@ -1,5 +1,5 @@
 ( function () {
-	var i, xhr, ids = [
+	let i, xhr, ids = [
 		'MSXML2.XMLHTTP.3.0',
 		'MSXML2.XMLHTTP',
 		'Microsoft.XMLHTTP'
